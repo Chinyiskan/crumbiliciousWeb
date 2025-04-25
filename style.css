@@ -420,11 +420,14 @@ footer {
 
 /* ========== MEDIA QUERY: PANTALLAS PEQUEÑAS (≤ 480px) CORREGIDA ========== */
 @media screen and (max-width: 480px) {
-    html, body {
-        height: 100%;
-        width: 100%;
-    }
+
   /* General */
+
+  body {
+    background-color: #A66A4C;      /* o el fondo que esté más abajo */
+    min-height: 100vh;              /* garantiza que cubra al menos la pantalla */
+  }
+  
     .banner {
       position: relative;
       display: flex;
