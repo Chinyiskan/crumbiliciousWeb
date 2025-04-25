@@ -317,6 +317,11 @@ header .logo{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+}
+
+.contactUs__content a {
+  margin-top: 50px;
 }
 
 .contactUs__content h2{
@@ -327,15 +332,16 @@ header .logo{
 
 .contactUs__content p{
     font-size: 2em;
+    color: #F8E3C8;
+    font-weight: 700;
 }
 
 .contactUs__image img{
     width: 90%;
 }
 
-.contactUs__content img{
-    width: 30%;
-    margin-left: 35%;
+.whatsapp-icon {
+  width: 30%;
 }
 
 @keyframes pulse {
