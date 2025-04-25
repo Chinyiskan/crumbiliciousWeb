@@ -128,6 +128,7 @@ header .logo{
     height: 100vh;
     display: flex;
     background-color: #F8E3C8;
+    border-top: 10px solid #A8C686;
 }
 
 .aboutUs .aboutUs__content{
@@ -137,6 +138,7 @@ header .logo{
     align-items: center;
     margin-left: 30px;
     width: 50%;
+    text-align: center;
 }
 
 .aboutUs .aboutUs__content h2{
@@ -147,6 +149,7 @@ header .logo{
 
 .aboutUs .aboutUs__content p{
     font-size: 2em;
+    font-weight: 700;
 }
 
 .aboutUs .aboutUs__image{
@@ -165,6 +168,7 @@ header .logo{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-top: 10px solid #A8C686;
 }
 
 .whyUs__title {
@@ -233,6 +237,7 @@ header .logo{
     flex-direction: column;
     align-items: center;
     gap: 2em;
+    border-top: 10px solid #A8C686;
 }
 
 .menu__title {
@@ -309,6 +314,7 @@ header .logo{
     background-color: #D94F45;
     display: flex;
     flex-direction: row;
+    border-top: 10px solid #A8C686;
 }
 
 .contactUs__image,
@@ -387,6 +393,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 10px solid #A8C686;
 }
 
 .footer__content {
