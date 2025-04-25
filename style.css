@@ -510,7 +510,7 @@ footer {
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 100vh;
+      height: 120vh;
       padding: 15px;
       margin: 0;
     }
@@ -540,6 +540,7 @@ footer {
 
     .aboutUs__image{
       display: flex;
+      width: 100%;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -548,11 +549,8 @@ footer {
     }
 
     .panaderia {
-      width: 50%;
+      width: 320px !important;
       height: auto;
-      display: block;
-      margin: 0 auto;
-      object-fit: contain;
     }
   
     /* ¿Por qué elegirnos? */
