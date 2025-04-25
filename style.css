@@ -441,7 +441,7 @@ footer {
       width: 100px;
       height: 150px;
       position: absolute;
-      top: 19%;
+      top: 21%;
       left: 50%;
       transform: translate(-50%, -50%) perspective(700px);
       z-index: 2;
@@ -513,9 +513,10 @@ footer {
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 80vh;
+      height: 100vh;
       margin: 0;
       padding: 10px 15px;
+      gap: 1rem;
     }
   
     .aboutUs .aboutUs__content{
