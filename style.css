@@ -401,11 +401,21 @@ footer {
 
 .footer__diseñador img {
     width: 150px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s;
+    animation: bitweb-bounce 3s infinite;
 }
 
 .footer__diseñador img:hover {
-    transform: scale(1.05);
+    transform: scale(1.07) rotate(-2deg);
+    animation: none; /* Detiene la animación al hacer hover */
+}
+
+@keyframes bitweb-bounce {
+    0%, 100% { transform: translateY(0);}
+    10% { transform: translateY(-8px);}
+    20% { transform: translateY(0);}
+    30% { transform: translateY(-4px);}
+    40% { transform: translateY(0);}
 }
 
 /* ========== MEDIA QUERY: PANTALLAS PEQUEÑAS (≤ 480px) CORREGIDA ========== */
@@ -620,7 +630,7 @@ footer {
     }
 
     .contactUs__content h2{
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
 
     .contactUs__content p{
@@ -642,36 +652,56 @@ footer {
     footer {
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
       text-align: center;
+      width: 100%;
+      padding: 1.5em 0.5em;
+      gap: 0.5em;
+      height: auto;
+      background-color: #A66A4C;
+      border-top: 3px solid #A8C686;
+    }
+  
+    .footer__content {
+      width: 100%;
+      font-size: 1.5em;
+      font-weight: 700;
+      font-family: 'Quicksand', sans-serif;
+      margin-bottom: 0.5em;
+    }
+  
+    .footer__diseñador {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      height: 200px;
-      width: 100%;
-      padding-top: 20px;
     }
-
-    footer .footer__content {
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    footer .footer__diseñador {
-      width: 100%;
-    }
-
-    footer p{
-      font-size: 20px;
+  
+    .footer__diseñador p {
+      font-size: 1.1em;
+      font-weight: 500;
+      margin: 0;
     }
   
     .footer__diseñador img {
-      width: 100px;
-      right: 50%;
+      width: 150px;
+      transition: transform 0.3s;
+      animation: bitweb-bounce 3s infinite;
     }
 
-    .footer__diseñador p {
-      font-size: 17px;
+    .footer__diseñador img:hover {
+      transform: scale(1.07) rotate(-2deg);
+      animation: none; /* Detiene la animación al hacer hover */
     }
-  }
-  
-  
-  
+
+    @keyframes bitweb-bounce {
+      0%, 100% { transform: translateY(0);}
+      10% { transform: translateY(-8px);}
+      20% { transform: translateY(0);}
+      30% { transform: translateY(-4px);}
+      40% { transform: translateY(0);}
+    }
+}
+
+
