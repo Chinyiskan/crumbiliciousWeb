@@ -431,14 +431,14 @@ footer {
     40% { transform: translateY(0);}
 }
 
-/* ========== MEDIA QUERY: PANTALLAS PEQUEÑAS (≤ 480px) CORREGIDA ========== */
+/* ========== MEDIA QUERY: PANTALLAS PEQUEÑAS (≤ 480px) ========== */
 @media screen and (max-width: 480px) {
 
   /* General */
 
   body {
-    background-color: #A66A4C;      /* o el fondo que esté más abajo */
-    min-height: 100vh;              /* garantiza que cubra al menos la pantalla */
+    background-color: #A66A4C;      
+    min-height: 100vh;              
   }
   
     .banner {
@@ -533,6 +533,7 @@ footer {
       margin: 0;
       padding: 10px 15px;
       gap: 1rem;
+      border-top: 5px solid #A8C686;
     }
   
     .aboutUs .aboutUs__content{
@@ -576,6 +577,11 @@ footer {
     /* ¿Por qué elegirnos? */
     .whyUs {
       padding-top: 10px;
+      border-top: 5px solid #A8C686;
+    }
+
+    .icons__whyUs {
+      width: 70%;
     }
 
     .whyUs__row {
@@ -585,7 +591,7 @@ footer {
     }
   
     .whyUs__row > div {
-      max-width: 80%;
+      max-width: 70%;
     }
 
     .whyUs h2{
@@ -597,6 +603,10 @@ footer {
     }
   
     /* Menú */
+    .menu {
+      border-top: 5px solid #A8C686;
+    }
+
     .menu__grid {
       grid-template-columns: 1fr;
       padding: 0 1rem;
@@ -620,6 +630,7 @@ footer {
       width: 100%;
       height: 100vh;
       padding: 15px;
+      border-top: 5px solid #A8C686;
     }
 
     .contactUs__image{
@@ -657,13 +668,12 @@ footer {
       font-weight: 700;
     }
 
-    .contactUs__content .whatsapp-icon{
-      width: 20%;
+    .whatsapp-icon{
+      width: 35%;
       height: auto;
       object-fit: cover;
       margin-top: 20px;
       position: relative;
-      right: 60px;
     }
   
     /* Footer */
@@ -678,7 +688,7 @@ footer {
       gap: 0.5em;
       height: auto;
       background-color: #A66A4C;
-      border-top: 3px solid #A8C686;
+      border-top: 5px solid #A8C686;
     }
   
     .footer__content {
