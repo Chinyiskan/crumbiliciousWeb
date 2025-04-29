@@ -11,6 +11,13 @@
 <body>
     
     <header class="banner">
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="nav__menu"><a href="#menu">Nuestro Menú</a></li>
+                <li class="nav__pedidos"><a href="#contactUs">Pedidos</a></li>
+            </ul>
+        </nav>
+        
         <img src="images/logo.png" class="logo">
         <div class="slider" style="--quantity: 8">
             <div class="item" style="--position: 1"><img src="images/almendra1.png"></div>
@@ -70,7 +77,7 @@
             </div>
         </section>
 
-        <section class="menu">
+        <section class="menu" id="menu">
             <h2 class="menu__title">Nuestro Menú</h2>
             <div class="menu__grid">
                 <div class="menu__item">
@@ -147,7 +154,7 @@
             </div>
         </section>
 
-        <section class="contactUs">
+        <section class="contactUs" id="contactUs">
             <div class="contactUs__image">
                 <img src="images/pedidos.png" class="icono-pedido">
             </div>
