@@ -14,6 +14,7 @@ p{
     font-family: 'Quicksand', sans-serif;
 }
 
+/*-- Navbar --*/
 .navbar{
     position: absolute;
     left: 86%;
@@ -43,6 +44,7 @@ p{
     background-color: #D94F45;
 }
 
+/*-- Banner --*/
 .banner{
         width: 100%;
         height: 100vh;
@@ -152,11 +154,13 @@ header .logo{
     z-index: 10;
 }
 
+/*-- ¿Quiénes somos? --*/
 .aboutUs{
     width: 100%;
     height: 100vh;
     display: flex;
     background-color: #F8E3C8;
+    border-top: 10px solid #A8C686;
 }
 
 .aboutUs .aboutUs__content{
@@ -166,6 +170,7 @@ header .logo{
     align-items: center;
     margin-left: 30px;
     width: 50%;
+    text-align: center;
 }
 
 .aboutUs .aboutUs__content h2{
@@ -187,6 +192,7 @@ header .logo{
     width: 100%;
 }
 
+/*-- ¿Por qué elegirnos? --*/
 .whyUs {
     width: 100%;
     min-height: 100vh;
@@ -195,6 +201,7 @@ header .logo{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-top: 10px solid #A8C686;
 }
 
 .whyUs__title {
@@ -254,6 +261,7 @@ header .logo{
     margin: 0;
 }
 
+/*-- Menú --*/
 .menu {
     width: 100%;
     min-height: 100vh;
@@ -263,6 +271,7 @@ header .logo{
     flex-direction: column;
     align-items: center;
     gap: 2em;
+    border-top: 10px solid #A8C686;
 }
 
 .menu__title {
@@ -333,12 +342,14 @@ header .logo{
     font-family: 'Quicksand', sans-serif;
 }
 
+/*-- Contacto --*/
 .contactUs{
     width: 100%;
     height: 100vh;
     background-color: #D94F45;
     display: flex;
     flex-direction: row;
+    border-top: 10px solid #A8C686;
 }
 
 .contactUs__image,
@@ -371,7 +382,7 @@ header .logo{
 }
 
 .whatsapp-icon {
-  width: 30%;
+    width: 30%;
 }
 
 @keyframes pulse {
@@ -409,6 +420,8 @@ header .logo{
     }
 }
 
+/*-- Footer --*/
+
 footer {
     background-color: #A66A4C;
     width: 100%;
@@ -417,6 +430,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 10px solid #A8C686;
 }
 
 .footer__content {
@@ -963,13 +977,13 @@ footer {
     }
 
     .contactUs__image {
-        width: 60%; /* Ajustar ancho de imagen */
+        width: 60%; 
         max-width: 350px;
-        margin-bottom: 2em; /* Añadir espacio */
+        margin-bottom: 2em; 
     }
 
     .contactUs__content {
-        width: 90%; /* Ajustar ancho */
+        width: 90%;
     }
 
     .contactUs__content h2 {
@@ -981,39 +995,39 @@ footer {
     }
 
     .contactUs__content a {
-        margin-top: 30px; /* Ajustar margen */
+        margin-top: 30px; 
     }
 
     .whatsapp-icon {
-        width: 50%; /* Ajustar tamaño del icono */
+        width: 50%; 
         max-width: 200px;
     }
 
 
   /* --- Footer --- */
     footer {
-        padding: 1.5em 1em; /* Ajustar padding */
-        flex-direction: column; /* Apilar elementos */
+        padding: 1.5em 1em; 
+        flex-direction: column; 
         text-align: center;
-        gap: 1em; /* Espacio entre elementos */
+        gap: 1em; 
         border-top: 5px solid #A8C686;
     }
 
     .footer__content {
-        font-size: 1.8em; /* Ajustar tamaño de fuente */
+        font-size: 1.8em; 
     }
 
     .footer__diseñador {
-        gap: 0.5em; /* Ajustar espacio */
-        flex-direction: column; /* Asegurar que esté en columna */
+        gap: 0.5em; 
+        flex-direction: column; 
     }
 
     .footer__diseñador p {
-        font-size: 1.5em; /* Ajustar tamaño de fuente */
+        font-size: 1.5em; 
     }
 
     .footer__diseñador img {
-        width: 180px; /* Ajustar tamaño del logo */
+        width: 180px; 
     }
     }
 
@@ -1060,8 +1074,8 @@ footer {
     .banner .slider {
         width: 160px; 
         height: 210px;
-        top: 18%; /* Ajustar si es necesario */
-        left: calc(50% - 90px); /* Centrar */
+        top: 18%; 
+        left: calc(50% - 90px); 
     }
 
     .banner .slider .item {
@@ -1257,8 +1271,8 @@ footer {
 
     /* --- Footer --- */
     footer {
-        padding: 2em 3em; /* Ajustar padding */
-        flex-direction: row; /* Lado a lado */
+        padding: 2em 3em; 
+        flex-direction: row; 
         justify-content: space-between;
         border-top: 5px solid #A8C686; 
     }
