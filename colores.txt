@@ -1,0 +1,42 @@
+Color | Código HEX | Descripción
+Crema pastel | #F8E3C8 | Fondo principal claro, cálido y suave.
+Marrón canela | #A66A4C | Color de fondo del header, tonos panadería retro.
+Coral vintage | #D94F45 | Usado en textos importantes, títulos y animaciones.
+Verde pistacho | #A8C686 (o similar) | Toque natural y alegre, complementario.
+Durazno pastel | #FCD5B5 | Acento cálido para animaciones o fondos secundarios.
+Crema claro | #FFEBCB | Fondo alternativo, más brillante que el crema base.
+Verde vintage apagado | #6C9A8B | Alternativo para contraste sin ser chillón.
+
+Nombre | Rango de ancho | Propósito principal
+Móviles pequeños | ≤ 480px | Teléfonos angostos y compactos (tu Moto Edge entra aquí).
+Móviles medianos/grandes | 481px – 767px | Smartphones normales y grandes en vertical.
+Tablets pequeñas | 768px – 1024px | iPads, tablets Android.
+Escritorio estándar | ≥ 1025px | Laptops y monitores normales.
+(opcional) Escritorio XL | ≥ 1440px | Pantallas ultra anchas (grandes monitores).
+
+/***** Breakpoints principales *****/
+
+/* Teléfonos muy pequeños */
+@media (max-width: 480px) { 
+  /* Ajustes móviles pequeños */
+}
+
+/* Smartphones normales */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Ajustes móviles medianos/grandes */
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Ajustes tablets */
+}
+
+/* Escritorio */
+@media (min-width: 1025px) {
+  /* Ajustes para escritorio */
+}
+
+/* Escritorio XL opcional */
+@media (min-width: 1440px) {
+  /* Ajustes para pantallas muy grandes */
+}
