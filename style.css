@@ -865,22 +865,22 @@ footer {
     }
 
     .banner {
-        height: 70vh;
+        height: 80vh;
     }
 
     .banner .slider {
-        width: 110px;
-        height: 160px;
-        top: 25%;
+        width: 120px;
+        height: 180px;
+        top: 27%;
         left: calc(50% - 100px);
     }
 
     .banner .slider .item {
-        transform: rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg )) translateZ(320px);
+        transform: rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg )) translateZ(380px);
     }
 
     .banner .content h1 {
-        font-size: 3.2em;
+        font-size: 3.3em;
         width: 100%;
         text-align: center;
         bottom: 20px;
@@ -906,13 +906,13 @@ footer {
     /* Imagen galleta gigante */
     .banner .content .model {
         width: 100%;
-        height: 35vh;
+        height: 40vh;
         background-size: contain;
         background-position: center bottom;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
-        bottom: 100px;
+        bottom: 65%;
     }
 
     header .logo {
