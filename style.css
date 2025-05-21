@@ -830,3 +830,96 @@ footer {
     }
 }
 
+/* ===================== MOBILE SMALL ===================== */
+@media (max-width: 350px) {
+    /* Banner y navbar */
+    .navbar {
+        position: absolute;
+        top: 10px;
+        right: 2vw;
+        left: auto;
+        width: auto;
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 20;
+    }
+    .navbar__list {
+        flex-direction: row;
+        gap: 0.7em;
+        align-items: center;
+    }
+    .nav__menu, .nav__pedidos {
+        font-size: 1em;
+        padding: 8px 1.2em;
+        border-radius: 16px;
+        min-width: 80px;
+        margin-bottom: 0;
+        background-color: #D94F45;
+        border: 2px solid #F8E3C8;
+        transition: background 0.2s, color 0.2s;
+    }
+    .nav__menu a, .nav__pedidos a {
+        color: #F8E3C8;
+        font-size: 1em;
+    }
+
+    .banner {
+        height: 80vh;
+    }
+
+    .banner .slider {
+        width: 100px;
+        height: 150px;
+        top: 25%;
+        left: calc(50% - 100px);
+    }
+
+    .banner .slider .item {
+        transform: rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg )) translateZ(320px);
+    }
+
+    .banner .content h1 {
+        font-size: 3em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner .content .author {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 200px;
+        padding: 0 1em 1em 0;
+        z-index: 3;
+    }
+
+    .banner .content h2 {
+        font-size: 1.5em;
+    }
+
+    .banner .content p {
+        font-size: 1em;
+    }
+
+    /* Imagen galleta gigante */
+    .banner .content .model {
+        width: 100%;
+        height: 42vh;
+        background-size: contain;
+        background-position: center bottom;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        bottom: 45px;
+    }
+
+    header .logo {
+        width: 60px;
+        height: auto;
+        top: 10px;
+        left: 10px;
+        position: absolute;
+        z-index: 10;
+    }
+}
