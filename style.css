@@ -831,7 +831,7 @@ footer {
 }
 
 /* ===================== MOBILE SMALL ===================== */
-@media (max-width: 350px) {
+@media (max-width: 400px) {
     /* Banner y navbar */
     .navbar {
         position: absolute;
