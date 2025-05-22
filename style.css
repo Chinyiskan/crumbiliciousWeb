@@ -206,6 +206,7 @@ header .logo{
     border-top: 10px solid #A8C686;
     padding-left: calc(6vw + 10px);
     padding-right: calc(6vw + 10px);
+    padding-bottom: 50px;
     box-sizing: border-box;
 }
 
@@ -254,8 +255,8 @@ header .logo{
 }
 
 .whyUs__row img {
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: autopx;
     object-fit: contain;
     margin-bottom: 1em;
 }
@@ -335,7 +336,7 @@ header .logo{
 
 .menu__item h3 {
     color: #D94F45;
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 0.5em;
     font-family: 'Luckiest Guy', cursive;
 }
@@ -343,7 +344,7 @@ header .logo{
 .menu__item p {
     color: #A66A4C;
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.3em;
     margin-bottom: 0.5em;
 }
 
@@ -374,7 +375,7 @@ header .logo{
 }
 
 .contactUs__content a {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .contactUs__content h2{
@@ -387,6 +388,22 @@ header .logo{
     font-size: 2em;
     color: #F8E3C8;
     font-weight: 700;
+}
+
+.contactUs__content .pedidos {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgba(248, 227, 200, 0.2);
+    border: 2px solid #F8E3C8;
+    border-radius: 15px;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .contactUs__image img{
@@ -412,6 +429,12 @@ header .logo{
 .icono-pedido {
     display: inline-block;
     animation: vibrar 1s infinite; 
+}
+
+.click {
+    font-size: 1.5em !important;
+    color: #F8E3C8 !important;
+    font-weight: 700;
 }
 
 @keyframes vibrar {
@@ -923,4 +946,23 @@ footer {
         position: absolute;
         z-index: 10;
     }
+
+    .contactUs__content .pedidos {
+        font-size: 1em;
+        font-style: italic;
+        margin: 5px 15px;
+        padding: 10px 10px;
+        background-color: rgba(248, 227, 200, 0.2);
+        border: 2px solid #F8E3C8;
+        border-radius: 15px;
+        animation: fadeIn 2s ease-in;
+    }
+    
+    .click {
+        font-size: 1.3em !important;
+        color: #F8E3C8 !important;
+        font-weight: 700;
+    }
 }
+
+
