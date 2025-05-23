@@ -372,6 +372,7 @@ header .logo{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    margin-right: 30px;
 }
 
 .contactUs__content a {
@@ -393,7 +394,7 @@ header .logo{
 .contactUs__content .pedidos {
     font-size: 1.2em;
     font-style: italic;
-    margin-top: 10px;
+    margin: 15px 20px 0px 20px;
     padding: 10px 20px;
     background-color: rgba(248, 227, 200, 0.2);
     border: 2px solid #F8E3C8;
@@ -956,6 +957,10 @@ footer {
         border: 2px solid #F8E3C8;
         border-radius: 15px;
         animation: fadeIn 2s ease-in;
+    }
+
+    .contactUs__content {
+        margin: 0px 15px !important;
     }
     
     .click {
