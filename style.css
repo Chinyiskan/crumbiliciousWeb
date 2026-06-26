@@ -332,6 +332,8 @@ header .logo{
 
 .menu__item-content {
     text-align: center;
+    flex: 1;
+    width: 100%;
 }
 
 .menu__item h3 {
@@ -353,6 +355,36 @@ header .logo{
     font-size: 1.3em;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
+}
+
+.btn-pedir {
+    display: inline-block;
+    margin-top: 1.2em;
+    padding: 0.65em 1.6em;
+    background-color: #D94F45;
+    color: #F8E3C8;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    text-decoration: none;
+    border: 2px solid #D94F45;
+    border-radius: 25px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    box-shadow: 0 2px 8px rgba(217, 79, 69, 0.25);
+    white-space: nowrap;
+}
+
+.btn-pedir:hover {
+    background-color: #A66A4C;
+    border-color: #A66A4C;
+    transform: scale(1.06) translateY(-2px);
+    box-shadow: 0 6px 16px rgba(166, 106, 76, 0.4);
+}
+
+.btn-pedir:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 6px rgba(217, 79, 69, 0.2);
 }
 
 /*-- Contacto --*/
@@ -971,3 +1003,50 @@ footer {
 }
 
 
+/* ===================== REDUCED MOTION ===================== */
+/*
+  Respeto a usuarios con condiciones vestibulares, epilepsia fotosensible
+  o preferencias de accesibilidad. WCAG 2.1 — Criterio 2.2.2
+*/
+@media (prefers-reduced-motion: reduce) {
+
+    /* Detiene el carrusel 3D — queda estático mostrando las cookies en su posición */
+    .banner .slider {
+        animation: none;
+    }
+
+    /* Detiene el icono de pedidos que vibra */
+    .icono-pedido {
+        animation: none;
+    }
+
+    /* Detiene el pulso del botón de WhatsApp */
+    .whatsapp-icon {
+        animation: none;
+    }
+
+    /* Detiene el bounce del logo del footer */
+    .footer__diseñador img {
+        animation: none;
+    }
+
+    /* Detiene la animación del título ¿Por qué elegirnos? */
+    .whyUs__title {
+        animation: none;
+    }
+
+    /* Detiene el fadeIn del aviso de domicilio */
+    .contactUs__content .pedidos {
+        animation: none;
+        opacity: 1;
+    }
+
+    /* Reduce todas las transiciones de hover a casi-instantáneas */
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

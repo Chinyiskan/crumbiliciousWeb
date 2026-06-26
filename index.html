@@ -4,13 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crum</title>
+    <title>Crumbilicious — Cookies Artesanales en Cúcuta</title>
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Crumbilicious - Cookies artesanales, crujientes y ricas. Hechas con amor y los mejores ingredientes. ¡Haz tu pedido ahora!">
     <meta name="keywords" content="cookies, galletas, artesanales, crujientes, deliciosas, pedidos, Crumbilicious">
     <meta name="author" content="Bit&Web">
     <meta name="copyright" content="2025 Crumbilicious">
     <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/model.webp" type="image/webp">
+    <link rel="apple-touch-icon" href="images/logo.webp">
+
+    <!-- Open Graph — previzualización al compartir en WhatsApp y redes sociales -->
+    <!-- ⚠️ Actualizar og:url y og:image con la URL real del dominio antes de publicar -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://crumbilicious.com/">
+    <meta property="og:title" content="Crumbilicious — Cookies Artesanales en Cúcuta">
+    <meta property="og:description" content="Cookies artesanales, crujientes y ricas. Hechas con amor y los mejores ingredientes. ¡Haz tu pedido ahora por WhatsApp!">
+    <meta property="og:image" content="https://crumbilicious.com/images/logo.webp">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Crumbilicious">
 </head>
 
 <body>
@@ -23,16 +37,16 @@
             </ul>
         </nav>
         
-        <img src="images/logo.webp" class="logo">
+        <img src="images/logo.webp" class="logo" alt="Logo de Crumbilicious">
         <div class="slider" style="--quantity: 8">
-            <div class="item" style="--position: 1"><img src="images/almendra1.webp"></div>
-            <div class="item" style="--position: 2"><img src="images/fiesta2.webp"></div>
-            <div class="item" style="--position: 3"><img src="images/arequipe3.webp"></div>
-            <div class="item" style="--position: 4"><img src="images/brownie4.webp"></div>
-            <div class="item" style="--position: 5"><img src="images/chocoChip5.webp"></div>
-            <div class="item" style="--position: 6"><img src="images/m&m6.webp"></div>
-            <div class="item" style="--position: 7"><img src="images/oreo7.webp"></div>
-            <div class="item" style="--position: 8"><img src="images/chocoChipBlanco8.webp"></div>
+            <div class="item" style="--position: 1"><img src="images/almendra1.webp" alt="Cookie de almendra"></div>
+            <div class="item" style="--position: 2"><img src="images/fiesta2.webp" alt="Cookie Fiesta con chispas de colores"></div>
+            <div class="item" style="--position: 3"><img src="images/arequipe3.webp" alt="Cookie rellena de arequipe"></div>
+            <div class="item" style="--position: 4"><img src="images/brownie4.webp" alt="Cookie de brownie"></div>
+            <div class="item" style="--position: 5"><img src="images/chocoChip5.webp" alt="Cookie Choco Chip"></div>
+            <div class="item" style="--position: 6"><img src="images/m&m6.webp" alt="Cookie de M&M"></div>
+            <div class="item" style="--position: 7"><img src="images/oreo7.webp" alt="Cookie estilo Oreo"></div>
+            <div class="item" style="--position: 8"><img src="images/chocoChipBlanco8.webp" alt="Cookie Choco Chip Blanco"></div>
         </div>
         
         <div class="content">
@@ -56,7 +70,7 @@
                 </p>
             </div>
             <div class="aboutUs__image">
-                <img src="images/panaderia.webp" alt="panaderia vintage" class="panaderia">
+                <img src="images/panaderia.webp" alt="Panadería vintage con estilo artesanal" class="panaderia" loading="lazy">
             </div>
         </section>
 
@@ -64,19 +78,19 @@
             <h2 class="whyUs__title">¿Por qué elegirnos?</h2>
             <div class="whyUs__row">
                 <div class="div1">
-                    <img src="images/icon1.webp">
+                    <img src="images/icon1.webp" alt="Icono de corazón — hechas con amor" loading="lazy">
                     <h3>Hechas con amor en cada bocado</h3>
                 </div>
                 <div class="div2">
-                    <img src="images/icon2.webp">
+                    <img src="images/icon2.webp" alt="Icono de ingredientes naturales" loading="lazy">
                     <h3>Ingredientes reales, sabor increíble</h3>
                 </div>
                 <div class="div3">
-                    <img src="images/icon3.webp">
+                    <img src="images/icon3.webp" alt="Icono de diseño artesanal único" loading="lazy">
                     <h3>Diseño único y delicioso</h3>
                 </div>
                 <div class="div4">
-                    <img src="images/icon4.webp">
+                    <img src="images/icon4.webp" alt="Icono de regalo — perfectas para regalar" loading="lazy">
                     <h3>Perfectas para regalar (o darte un gusto😋)</h3>
                 </div>
             </div>
@@ -86,82 +100,90 @@
             <h2 class="menu__title">Nuestro Menú</h2>
             <div class="menu__grid">
                 <div class="menu__item">
-                    <img src="images/cookie1.webp" alt="Choco Chip">
+                    <img src="images/cookie1.webp" alt="Cookie Choco Chip" loading="lazy">
                     <div class="menu__item-content">
                         <h3>Choco Chip</h3>
                         <p>La clásica favorita: galleta dorada con chispas de chocolate negro, crujiente por fuera y suave por dentro.</p>
                         <span class="price">$5.000</span>
                     </div>
+                    <a href="https://wa.me/573054565777?text=Hola!+Quiero+pedir+una+cookie+Choco+Chip+en+Crumbilicious+%F0%9F%8D%AA" class="btn-pedir" target="_blank" rel="noopener noreferrer">¡Pedir ahora! 🍪</a>
                 </div>
 
                 <div class="menu__item">
-                    <img src="images/cookie2.webp" alt="Choco Chip Blanco">
+                    <img src="images/cookie2.webp" alt="Cookie Choco Chip Blanco" loading="lazy">
                     <div class="menu__item-content">
                         <h3>Choco Chip Blanco</h3>
                         <p>Una dulce variación de la clásica, con deliciosas chispas de chocolate blanco que se derriten en cada bocado.</p>
                         <span class="price">$5.000</span>
                     </div>
+                    <a href="https://wa.me/573054565777?text=Hola!+Quiero+pedir+una+cookie+Choco+Chip+Blanco+en+Crumbilicious+%F0%9F%8D%AA" class="btn-pedir" target="_blank" rel="noopener noreferrer">¡Pedir ahora! 🍪</a>
                 </div>
 
                 <div class="menu__item">
-                    <img src="images/cookie3.webp" alt="Arequipe">
+                    <img src="images/cookie3.webp" alt="Cookie rellena de arequipe" loading="lazy">
                     <div class="menu__item-content">
                         <h3>Arequipe</h3>
                         <p>Galleta rellena de cremoso arequipe, perfecta para los amantes del sabor tradicional colombiano.</p>
                         <span class="price">$5.000</span>
                     </div>
+                    <a href="https://wa.me/573054565777?text=Hola!+Quiero+pedir+una+cookie+de+Arequipe+en+Crumbilicious+%F0%9F%8D%AA" class="btn-pedir" target="_blank" rel="noopener noreferrer">¡Pedir ahora! 🍪</a>
                 </div>
 
                 <div class="menu__item">
-                    <img src="images/cookie4.webp" alt="Fiesta">
+                    <img src="images/cookie4.webp" alt="Cookie Fiesta con chispas de colores" loading="lazy">
                     <div class="menu__item-content">
                         <h3>Fiesta</h3>
                         <p>Una explosión de sabor y color con chips de chocolate cubiertos de caramelo. Ideal para niños y adultos con corazón alegre.</p>
                         <span class="price">$5.000</span>
                     </div>
+                    <a href="https://wa.me/573054565777?text=Hola!+Quiero+pedir+una+cookie+Fiesta+en+Crumbilicious+%F0%9F%8D%AA" class="btn-pedir" target="_blank" rel="noopener noreferrer">¡Pedir ahora! 🍪</a>
                 </div>
 
                 <div class="menu__item">
-                    <img src="images/cookie5.webp" alt="Almendra">
+                    <img src="images/cookie5.webp" alt="Cookie de almendra tostada" loading="lazy">
                     <div class="menu__item-content">
                         <h3>Almendra</h3>
                         <p>Toque elegante: galleta con trozos de almendra tostada. Sabor delicado y textura irresistible.</p>
                         <span class="price">$5.000</span>
                     </div>
+                    <a href="https://wa.me/573054565777?text=Hola!+Quiero+pedir+una+cookie+de+Almendra+en+Crumbilicious+%F0%9F%8D%AA" class="btn-pedir" target="_blank" rel="noopener noreferrer">¡Pedir ahora! 🍪</a>
                 </div>
 
                 <div class="menu__item">
-                    <img src="images/cookie6.webp" alt="M&M">
+                    <img src="images/cookie6.webp" alt="Cookie de M&M con chispas de colores" loading="lazy">
                     <div class="menu__item-content">
                         <h3>M&M</h3>
                         <p>Galleta divertida y crujiente con trozos de los clásicos M&M que añaden color y dulzura a cada mordida.</p>
                         <span class="price">$5.000</span>
                     </div>
+                    <a href="https://wa.me/573054565777?text=Hola!+Quiero+pedir+una+cookie+de+M%26M+en+Crumbilicious+%F0%9F%8D%AA" class="btn-pedir" target="_blank" rel="noopener noreferrer">¡Pedir ahora! 🍪</a>
                 </div>
 
                 <div class="menu__item">
-                    <img src="images/cookie7.webp" alt="Oreo">
+                    <img src="images/cookie7.webp" alt="Cookie estilo Oreo con relleno de vainilla" loading="lazy">
                     <div class="menu__item-content">
                         <h3>Oreo</h3>
                         <p>Inspirada en la galleta más famosa del mundo: base de chocolate oscuro con relleno cremoso de vainilla.</p>
                         <span class="price">$5.000</span>
                     </div>
+                    <a href="https://wa.me/573054565777?text=Hola!+Quiero+pedir+una+cookie+Oreo+en+Crumbilicious+%F0%9F%8D%AA" class="btn-pedir" target="_blank" rel="noopener noreferrer">¡Pedir ahora! 🍪</a>
                 </div>
 
                 <div class="menu__item">
-                    <img src="images/cookie8.webp" alt="Brownie">
+                    <img src="images/cookie8.webp" alt="Cookie de brownie con relleno de arequipe" loading="lazy">
                     <div class="menu__item-content">
                         <h3>Brownie</h3>
                         <p>Galleta dorada con trozos de brownie encima y un cremoso relleno de arequipe. La combinación perfecta entre lo clásico y lo irresistible.</p>
                         <span class="price">$5.000</span>
                     </div>
+                    <a href="https://wa.me/573054565777?text=Hola!+Quiero+pedir+una+cookie+de+Brownie+en+Crumbilicious+%F0%9F%8D%AA" class="btn-pedir" target="_blank" rel="noopener noreferrer">¡Pedir ahora! 🍪</a>
                 </div>
             </div>
         </section>
 
         <section class="contactUs" id="contactUs">
             <div class="contactUs__image">
-                <img src="images/pedidos.webp" class="icono-pedido">
+                <img src="images/pedidos.webp" class="icono-pedido" alt="Ilustración animada de pedidos" loading="lazy">
             </div>
 
             <div class="contactUs__content">
@@ -171,7 +193,7 @@
                 </p>
                 <p class="pedidos">Por pedidos de 4 unidades o más, el domicilio es gratis en barrios cercanos a Colsag (Cúcuta).</p>
                 <a href="https://wa.me/573054565777" target="_blank" rel="noopener noreferrer">
-                    <img src="images/whatsApp.webp" alt="Contáctanos por WhatsApp" class="whatsapp-icon">
+                    <img src="images/whatsApp.webp" alt="Contáctanos por WhatsApp" class="whatsapp-icon" loading="lazy">
                 </a>
                 <p class="click">Haz click aquí para contactarnos</p>
             </div>
@@ -185,7 +207,7 @@
         </div>
         <div class="footer__diseñador">
             <p>Diseñado por:</p>
-            <img src="images/bit&web.webp" width="200" alt="Bit&Web">
+            <img src="images/bit&web.webp" width="200" alt="Bit&Web — Diseño web" loading="lazy">
         </div>
     </footer>
 </body>
