@@ -493,47 +493,129 @@ header .logo{
 footer {
     background-color: #A66A4C;
     width: 100%;
-    padding: 2em 4em;
+    padding: 3em 5em;
     color: #F8E3C8;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 10px solid #A8C686;
+    gap: 2em;
+    flex-wrap: wrap;
 }
 
-.footer__content {
+/* --- Columna izquierda: marca --- */
+.footer__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.footer__brand-name {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.2em;
+    color: #F8E3C8;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+.footer__tagline {
     font-family: 'Quicksand', sans-serif;
-    font-size: 2em;
+    font-size: 1em;
+    font-weight: 600;
+    opacity: 0.85;
 }
 
-.footer__diseñador {
+.footer__copyright {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.85em;
+    opacity: 0.65;
+    margin-top: 0.4em;
+}
+
+/* --- Columna central: Instagram --- */
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7em;
+    text-align: center;
+}
+
+.footer__social-title {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.6em;
+    color: #F8E3C8;
+    letter-spacing: 2px;
+}
+
+.footer__instagram {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 0.55em;
+    padding: 0.55em 1.4em;
+    background-color: rgba(248, 227, 200, 0.12);
+    border: 2px solid #F8E3C8;
+    border-radius: 25px;
+    color: #F8E3C8;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.05em;
+    transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.footer__instagram:hover {
+    background-color: rgba(248, 227, 200, 0.28);
+    transform: scale(1.06) translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.footer__instagram svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.footer__social-cta {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9em;
+    opacity: 0.78;
+    font-style: italic;
+}
+
+/* --- Columna derecha: diseñador --- */
+.footer__diseñador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6em;
+    text-align: center;
 }
 
 .footer__diseñador p {
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
+    opacity: 0.8;
 }
 
 .footer__diseñador img {
-    width: 150px;
+    width: 140px;
     transition: transform 0.3s;
     animation: bitweb-bounce 3s infinite;
 }
 
 .footer__diseñador img:hover {
     transform: scale(1.07) rotate(-2deg);
-    animation: none; /* Detiene la animación al hacer hover */
+    animation: none;
 }
 
 @keyframes bitweb-bounce {
-    0%, 100% { transform: translateY(0);}
-    10% { transform: translateY(-8px);}
-    20% { transform: translateY(0);}
-    30% { transform: translateY(-4px);}
-    40% { transform: translateY(0);}
+    0%, 100% { transform: translateY(0); }
+    10%       { transform: translateY(-8px); }
+    20%       { transform: translateY(0); }
+    30%       { transform: translateY(-4px); }
+    40%       { transform: translateY(0); }
 }
 
 /* ===================== RESPONSIVE ===================== */
@@ -697,15 +779,17 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 2em 1em;
-        gap: 1em;
+        padding: 2.5em 1.5em;
+        gap: 2em;
     }
-    .footer__content {
-        font-size: 1.6em;
-        font-weight: bold;
+    .footer__brand {
+        align-items: center;
+    }
+    .footer__brand-name {
+        font-size: 1.8em;
     }
     .footer__diseñador img {
-        width: 100px;
+        width: 110px;
     }
 }
 
@@ -873,13 +957,18 @@ footer {
     }
 
     /* Footer */
-    .footer__content {
-        font-size: 1.3em;
-        font-weight: bold;
+    .footer__brand-name {
+        font-size: 1.5em;
     }
-    .footer__diseñador p {
+    .footer__tagline,
+    .footer__copyright {
+        font-size: 0.85em;
+    }
+    .footer__social-title {
         font-size: 1.3em;
-        font-style: italic;
+    }
+    .footer__instagram {
+        font-size: 0.95em;
     }
     .footer__diseñador img {
         width: 100px;
