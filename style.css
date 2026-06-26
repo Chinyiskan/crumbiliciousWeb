@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quicksand:wght@300..700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -221,6 +225,14 @@ header .logo{
     animation: color-change 4s infinite;
 }
 
+@keyframes color-change {
+    0%   { color: #F8E3C8; }
+    25%  { color: #D94F45; }
+    50%  { color: #F8E3C8; }
+    75%  { color: #A66A4C; }
+    100% { color: #F8E3C8; }
+}
+
 .whyUs__row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -256,7 +268,7 @@ header .logo{
 
 .whyUs__row img {
     width: 250px;
-    height: autopx;
+    height: auto;
     object-fit: contain;
     margin-bottom: 1em;
 }
@@ -1098,6 +1110,11 @@ footer {
   o preferencias de accesibilidad. WCAG 2.1 — Criterio 2.2.2
 */
 @media (prefers-reduced-motion: reduce) {
+
+    /* Deshabilita el scroll suave para usuarios sensibles al movimiento */
+    html {
+        scroll-behavior: auto;
+    }
 
     /* Detiene el carrusel 3D — queda estático mostrando las cookies en su posición */
     .banner .slider {
